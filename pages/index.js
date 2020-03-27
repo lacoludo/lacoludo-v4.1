@@ -1,203 +1,233 @@
-import Head from 'next/head'
+import Menu from '../components/menu'
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+export default () => (
+  <>
+    <Menu />
+    <div className="section big-height background-black">
+      <div className="home-carousel-wrap fade-elements">
+        <div id="sync1" className="owl-carousel">
+          <div className="item background-home-image-1">
+            <div className="dark-over-2"></div>
+            <div className="home-text-wrap">
+              <div className="container">
+                <div className="twelve columns">
+                  <div className="home-text-freelance">
+                    <h1>
+                      we build great
+                      <br />
+                      <span>brands</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="item background-home-image-2">
+            <div className="dark-over-2"></div>
+            <div className="home-text-wrap">
+              <div className="container">
+                <div className="twelve columns">
+                  <div className="home-text-freelance">
+                    <h1>
+                      focused on
+                      <br />
+                      <span>strategy</span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sync2" className="owl-carousel fade-elements">
+          <div className="item"></div>
+          <div className="item"></div>
+        </div>
+      </div>
+    </div>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+    <div className="section padding-top-bottom background-black">
+      <div className="container">
+        <div className="twelve columns">
+          <div id="portfolio-filter" className="portfolio-filter">
+            <ul id="filter">
+              <li>
+                <a href="#" className="current" data-filter="*" title="">
+                  all
+                </a>
+              </li>
+              <li
+                className="tipped"
+                data-title="3 projects"
+                data-tipper-options='{"direction":"top","follow":"true"}'
+              >
+                <a href="#" data-filter=".branding" title="">
+                  branding
+                </a>
+              </li>
+              <li
+                className="tipped"
+                data-title="3 projects"
+                data-tipper-options='{"direction":"top","follow":"true"}'
+              >
+                <a href="#" data-filter=".photo" title="">
+                  photo
+                </a>
+              </li>
+              <li
+                className="tipped"
+                data-title="4 projects"
+                data-tipper-options='{"direction":"top","follow":"true"}'
+              >
+                <a href="#" data-filter=".motion" title="">
+                  motion
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
+      <div id="projects-grid" className="in-container have-space">
         <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
+          href="project.html"
+          className="tipped"
+          data-title="<em>Web Design</em><br><strong>Argentina Cine</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
         >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <div className="portfolio-box-1 half-width have-space branding">
+            <img src="/portfolio/1.jpg" alt="" />
+          </div>
         </a>
-
         <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
+          href="project.html"
+          className="tipped"
+          data-title="<em>Photography</em><br><strong>Ryan | Nike Dunes</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
         >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
+          <div className="portfolio-box-1 half-width have-space photo">
+            <img src="/portfolio/2.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Art Direction</em><br><strong>Reflexion</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space motion">
+            <img src="/portfolio/3.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Industrial Design</em><br><strong>iPhone 8</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space branding">
+            <img src="/portfolio/4.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Branding</em><br><strong>Val Sander</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space photo">
+            <img src="/portfolio/5.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Branding</em><br><strong>Manifesto</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space motion">
+            <img src="/portfolio/6.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Branding</em><br><strong>Middletown Cafe</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space motion">
+            <img src="/portfolio/7.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Art Direction</em><br><strong>Bar Du Port</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space motion">
+            <img src="/portfolio/9.jpg" alt="" />
+          </div>
+        </a>
+        <a
+          href="project.html"
+          className="tipped"
+          data-title="<em>Crafts</em><br><strong>Ceramic Wood & Glass</strong>"
+          data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
+        >
+          <div className="portfolio-box-1 half-width have-space branding">
+            <img src="/portfolio/8.jpg" alt="" />
+          </div>
         </a>
       </div>
-    </main>
+    </div>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
+    <div className="section padding-top-bottom background-black">
+      <div className="container">
+        <div
+          className="six columns footer"
+          data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s"
+        >
+          <p>
+            Call us at <a href="#">+37 237 325 563</a>
+            <br />
+            or say hello at <a href="#">people@namos.com</a>
+          </p>
+        </div>
+        <div
+          className="six columns"
+          data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s"
+        >
+          <ul className="footer-social">
+            <li>
+              <a className="twitter" href="#">
+                Tw
+              </a>
+            </li>
+            <li>
+              <a className="facebook" href="#">
+                Fb
+              </a>
+            </li>
+            <li>
+              <a className="google" href="#">
+                G+
+              </a>
+            </li>
+            <li>
+              <a className="vimeo" href="#">
+                Vm
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
+    <div
+      className="scroll-to-top tipped"
+      data-title="<em>top</em>"
+      data-tipper-options='{"direction":"bottom","follow":"true","margin":20}'
+    ></div>
+  </>
 )
-
-export default Home
