@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-@import url('colors/color.css');
+@import url('color.css');
 
 body.royal_preloader {
   background: none;
@@ -747,7 +747,7 @@ main.scale-down {
   width: 98px;
   height: 20px;
   top: 30px;
-  background: url('/logo.png') no-repeat center center;
+  /* background: url('/logo.png') no-repeat center center; */
   background-size: 98px 20px;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -761,7 +761,7 @@ main.scale-down {
   height: 28px;
   z-index: 10000;
   top: 46px;
-  background: url('/logo.png') no-repeat center center;
+  /* background: url('/logo.png') no-repeat center center; */
   background-size: 137px 28px;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -891,14 +891,14 @@ main.scale-down {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.nav-social li a.github:hover {
+  color: #333;
+}
+.nav-social li a.linkedin:hover {
+  color: #0077b5;
+}
 .nav-social li a.twitter:hover {
-  color: #00b6f1;
-}
-.nav-social li a.facebook:hover {
-  color: #3b5998;
-}
-.nav-social li a.google:hover {
-  color: #df4a32;
+  color: #1da1f2;
 }
 .nav-social li a:before {
   content: '';
@@ -911,14 +911,14 @@ main.scale-down {
   top: 50%;
   z-index: 10;
 }
+.nav-social li a.github:before {
+  background-color: #333;
+}
+.nav-social li a.linkedin:before {
+  background-color: #0077b5;
+}
 .nav-social li a.twitter:before {
-  background-color: #00b6f1;
-}
-.nav-social li a.facebook:before {
-  background-color: #3b5998;
-}
-.nav-social li a.google:before {
-  background-color: #df4a32;
+  background-color: #1da1f2;
 }
 
 /* #General style
@@ -2823,17 +2823,14 @@ svg * {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+.footer-social li a.github:hover {
+  color: #333;
+}
+.footer-social li a.linkedin:hover {
+  color: #0077b5;
+}
 .footer-social li a.twitter:hover {
-  color: #00b6f1;
-}
-.footer-social li a.facebook:hover {
-  color: #3b5998;
-}
-.footer-social li a.google:hover {
-  color: #df4a32;
-}
-.footer-social li a.vimeo:hover {
-  color: #1ab7ea;
+  color: #1da1f2;
 }
 .footer-social li a:before {
   content: '';
@@ -2846,17 +2843,14 @@ svg * {
   top: 50%;
   z-index: 10;
 }
+.footer-social li a.github:before {
+  background-color: #333;
+}
+.footer-social li a.linkedin:before {
+  background-color: #0077b5;
+}
 .footer-social li a.twitter:before {
-  background-color: #00b6f1;
-}
-.footer-social li a.facebook:before {
-  background-color: #3b5998;
-}
-.footer-social li a.google:before {
-  background-color: #df4a32;
-}
-.footer-social li a.vimeo:before {
-  background-color: #1ab7ea;
+  background-color: #1da1f2;
 }
 
 /* #Tooltip

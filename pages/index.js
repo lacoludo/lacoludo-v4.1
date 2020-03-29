@@ -1,8 +1,72 @@
-import Menu from '../components/menu'
+import Link from 'next/link'
 
 export default () => (
   <>
-    <Menu />
+    <div className="cd-nav-container" id="cd-nav">
+      <header>
+        <a href="#0" className="cd-close-nav">
+          Close
+        </a>
+      </header>
+
+      <div className="cd-nav">
+        <nav className="menu menu--mohe">
+          <a className="menu__item" href="index.html">
+            <span className="menu__item-name curent-nav">Work</span>
+            <span className="menu__item-label">Explore the portfolio</span>
+          </a>
+          <a className="menu__item" href="about.html">
+            <span className="menu__item-name">Studio</span>
+            <span className="menu__item-label">Read our mission statement</span>
+          </a>
+          <a className="menu__item" href="blog.html">
+            <span className="menu__item-name">Journal</span>
+            <span className="menu__item-label">
+              Discover fascinating stories
+            </span>
+          </a>
+          <a className="menu__item" href="contact.html">
+            <span className="menu__item-name">Hello</span>
+            <span className="menu__item-label">Get in touch and find us</span>
+          </a>
+        </nav>
+      </div>
+
+      <ul className="nav-social">
+        <li>
+          <a className="github" href="#">
+            <i className="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a className="linkedin" href="#">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a className="twitter" href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div className="cd-overlay"></div>
+
+    <nav id="menu-wrap" className="menu-back cbp-af-header">
+      <div className="container">
+        <div className="twelve columns">
+          <div className="menu">
+            <a href="index.html">
+              <div className="logo"></div>
+            </a>
+            <a href="#cd-nav" className="cd-nav-trigger">
+              Menu<span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div className="section big-height background-black">
       <div className="home-carousel-wrap fade-elements">
         <div id="sync1" className="owl-carousel">
@@ -62,7 +126,7 @@ export default () => (
                 data-tipper-options='{"direction":"top","follow":"true"}'
               >
                 <a href="#" data-filter=".branding" title="">
-                  branding
+                  web development
                 </a>
               </li>
               <li
@@ -71,7 +135,7 @@ export default () => (
                 data-tipper-options='{"direction":"top","follow":"true"}'
               >
                 <a href="#" data-filter=".photo" title="">
-                  photo
+                  app development
                 </a>
               </li>
               <li
@@ -80,7 +144,16 @@ export default () => (
                 data-tipper-options='{"direction":"top","follow":"true"}'
               >
                 <a href="#" data-filter=".motion" title="">
-                  motion
+                  web design
+                </a>
+              </li>
+              <li
+                className="tipped"
+                data-title="4 projects"
+                data-tipper-options='{"direction":"top","follow":"true"}'
+              >
+                <a href="#" data-filter=".motion" title="">
+                  app design
                 </a>
               </li>
             </ul>
@@ -189,9 +262,9 @@ export default () => (
           data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s"
         >
           <p>
-            Call us at <a href="#">+37 237 325 563</a>
+            Call me at <a href="#">+33 7 81 81 49 79</a>
             <br />
-            or say hello at <a href="#">people@namos.com</a>
+            or say hello at <a href="#">lacoludo@outlook.com</a>
           </p>
         </div>
         <div
@@ -200,23 +273,18 @@ export default () => (
         >
           <ul className="footer-social">
             <li>
+              <a className="github" href="#">
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a className="linkedin" href="#">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
               <a className="twitter" href="#">
-                Tw
-              </a>
-            </li>
-            <li>
-              <a className="facebook" href="#">
-                Fb
-              </a>
-            </li>
-            <li>
-              <a className="google" href="#">
-                G+
-              </a>
-            </li>
-            <li>
-              <a className="vimeo" href="#">
-                Vm
+                <i className="fab fa-twitter"></i>
               </a>
             </li>
           </ul>
