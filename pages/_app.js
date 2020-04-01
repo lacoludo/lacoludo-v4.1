@@ -1,3 +1,5 @@
+import Page from '../components/page'
+
 // Skeleton remixed
 import '../css/skeleton-remixed/base.css'
 import '../css/skeleton-remixed/skeleton.css'
@@ -14,4 +16,8 @@ import '../css/retina/retina.css'
 import '../css/owl.carousel/owl.carousel.css'
 import '../css/owl.carousel/owl.transitions.css'
 
-export default ({ Component, pageProps }) => <Component {...pageProps} />
+export default ({ Component, pageProps }) => (
+  <Page>
+    <Component {...pageProps} />
+  </Page>
+)
