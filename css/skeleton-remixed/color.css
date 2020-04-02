@@ -18,6 +18,8 @@ a:focus,
 .comm-link,
 .sidebar-list-one li a:hover,
 .comment a,
+.menu > ul > li a:hover,
+.menu > ul > li a.mPS2id-highlight,
 .home-text-freelance h1 {
   color: #00d8ff;
 }

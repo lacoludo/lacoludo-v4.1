@@ -202,8 +202,6 @@ h6 {
   line-height: 18px;
 }
 
-p {
-}
 p img {
   margin: 0;
 }
@@ -274,9 +272,6 @@ a:focus {
 
 /* #Lists
 ================================================== */
-ul,
-ol {
-}
 ul {
   list-style: none outside;
 }
@@ -303,11 +298,6 @@ ul ol,
 ol ol,
 ol ul {
   font-size: 90%;
-}
-ul ul li,
-ul ol li,
-ol ol li,
-ol ul li {
 }
 li {
   line-height: 18px;
@@ -407,4 +397,8 @@ input::-moz-focus-inner {
 }
 ::-moz-selection {
   background: rgba(100, 100, 100, 0.2); /* Firefox */
+}
+
+#home-image {
+  background-image: url('/parallax-home.jpg') !important;
 }
