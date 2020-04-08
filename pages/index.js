@@ -3,14 +3,13 @@ import Masonry from 'react-masonry-component'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
-import ScrollToTop from '../components/scroll-to-top'
 
 export default () => {
-  const data = [
+  const initialData = [
     {
       id: 1,
       name: 'Diviya Lacouture',
-      category: 'Web Design',
+      category: 'Web Development',
       image: '/portfolio/1.jpg'
     },
     {
@@ -56,10 +55,12 @@ export default () => {
       image: '/portfolio/8.jpg'
     }
   ]
-
-  const masonryOptions = {
-    transitionDuration: 0
-  }
+  let data = initialData
+  const filterReset = () => []
+  const filterWebDev = () => []
+  const filterAppDev = () => []
+  const filterWebDes = () => []
+  const filterAppDes = () => []
 
   return (
     <>
@@ -87,46 +88,30 @@ export default () => {
       <div className="section padding-top-bottom background-black">
         <div className="container">
           <div className="twelve columns">
-            <div id="portfolio-filter" className="portfolio-filter">
+            <div className="portfolio-filter" id="portfolio-filter">
               <ul id="filter">
                 <li>
-                  <a href="#" className="current" data-filter="*" title="">
+                  <a className="current" href="" onClick={filterReset}>
                     all
                   </a>
                 </li>
-                <li
-                  className="tipped"
-                  data-title="3 projects"
-                  data-tipper-options='{"direction":"top","follow":"true"}'
-                >
-                  <a href="#" data-filter=".branding" title="">
+                <li className="">
+                  <a href="" onClick={filterWebDev}>
                     web development
                   </a>
                 </li>
-                <li
-                  className="tipped"
-                  data-title="3 projects"
-                  data-tipper-options='{"direction":"top","follow":"true"}'
-                >
-                  <a href="#" data-filter=".photo" title="">
+                <li className="">
+                  <a href="" onClick={filterAppDev}>
                     app development
                   </a>
                 </li>
-                <li
-                  className="tipped"
-                  data-title="4 projects"
-                  data-tipper-options='{"direction":"top","follow":"true"}'
-                >
-                  <a href="#" data-filter=".motion" title="">
+                <li className="">
+                  <a href="" onClick={filterWebDes}>
                     web design
                   </a>
                 </li>
-                <li
-                  className="tipped"
-                  data-title="4 projects"
-                  data-tipper-options='{"direction":"top","follow":"true"}'
-                >
-                  <a href="#" data-filter=".motion" title="">
+                <li className="">
+                  <a href="" onClick={filterAppDes}>
                     app design
                   </a>
                 </li>
@@ -134,55 +119,23 @@ export default () => {
             </div>
           </div>
         </div>
-        <div id="projects-grid" className="in-container have-space">
-          {data.map(project => (
-            <div key={project.id}>
+        <div className="in-container have-space" id="projects-grid">
+          <Masonry>
+            {data.map(project => (
               <Link
+                key={project.id}
                 href="/projects/[project.id]"
                 as={`/projects/${project.name}`}
               >
-                <a
-                  className="tipped"
-                  data-title={`<em>${project.category}</em><br><strong>${project.name}</strong`}
-                  data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
-                >
-                  <div className="portfolio-box-1 half-width have-space branding">
-                    <img src={project.image} alt={project.name} />
-                  </div>
+                <a className="portfolio-box-1 half-width have-space">
+                  <img src={project.image} alt={project.name} />
                 </a>
               </Link>
-            </div>
-          ))}
-          {/* <Masonry
-            className={''} // default ''
-            elementType={'ul'} // default 'div'
-            options={masonryOptions} // default {}
-            disableImagesLoaded={false} // default false
-            updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-          >
-            {data.map(project => (
-              <div key={project.id}>
-                <Link
-                  href="/projects/[project.id]"
-                  as={`/projects/${project.name}`}
-                >
-                  <a
-                    className="tipped"
-                    data-title={`<em>${project.category}</em><br><strong>${project.name}</strong`}
-                    data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'
-                  >
-                    <div className="portfolio-box-1 half-width have-space branding">
-                      <img src={project.image} alt={project.name} />
-                    </div>
-                  </a>
-                </Link>
-              </div>
             ))}
-          </Masonry> */}
+          </Masonry>
         </div>
       </div>
       <Footer />
-      <ScrollToTop />
     </>
   )
 }

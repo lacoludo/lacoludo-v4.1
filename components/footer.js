@@ -1,9 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLinkedinIn,
-  faTwitter
-} from '@fortawesome/free-brands-svg-icons'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 export default () => (
   <>
@@ -30,7 +25,7 @@ export default () => (
                 href="https://github.com/lacoludo"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FaGithub />
               </a>
             </li>
             <li>
@@ -39,7 +34,7 @@ export default () => (
                 href="https://www.linkedin.com/in/lacoludo"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <FaLinkedinIn />
               </a>
             </li>
             <li>
@@ -48,7 +43,7 @@ export default () => (
                 href="https://twitter.com/lacoludo"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FaTwitter />
               </a>
             </li>
           </ul>
