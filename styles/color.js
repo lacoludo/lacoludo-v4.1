@@ -1,6 +1,6 @@
-export default () => {
-  const color = '#00d8ff'
+export const color = '#00d8ff'
 
+export default () => {
   return (
     <style jsx global>{`
       a:hover,

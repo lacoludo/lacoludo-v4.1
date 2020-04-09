@@ -5666,10 +5666,10 @@ raw-loader@^2.0.0:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
-react-content-loader@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-5.0.3.tgz#2de797139a86be0418c83c4b71f68051c4bc409b"
-  integrity sha512-uEWQiTyGXgxJLuY+vZBngpVbFRSRciMMM30eXJ3QtgPN4wQx9uPHpxnmJoQjNXMyJIz7Bxyd/nrtkIdAMEeM+w==
+react-content-loader@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-5.0.4.tgz#1493491d2f6b309d281d84144a655417ea734486"
+  integrity sha512-hxv4Td1kQxFOmIUbBZ2S3HGZ/jJr28aJvM+8fndm9TmNOE7tSde7WSTL6R68aTS6qE0BA3ptcWIErrP704pQSw==
 
 react-custom-scrollbars@^4.2.1:
   version "4.2.1"

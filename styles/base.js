@@ -1,5 +1,6 @@
-export default () => (
-  <style jsx global>{`
+import { createGlobalStyle } from 'styled-components'
+
+export default createGlobalStyle`
     // Table of Content
     // ==================================================
     // #Reset & Basics
@@ -399,5 +400,4 @@ export default () => (
     ::-moz-selection {
       background: rgba(100, 100, 100, 0.2); // Firefox
     }
-  `}</style>
-)
+  `

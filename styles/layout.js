@@ -1745,6 +1745,7 @@ export default () => (
       clear: both;
     }
     #filter li a {
+      cursor: pointer;
       position: relative;
       display: inline-block;
       overflow: hidden;
@@ -1900,12 +1901,6 @@ export default () => (
       right: 0;
       bottom: 130px;
     }
-    .project-nav-wrap .left-nav .text-on-hover:before {
-      font-family: FontAwesome;
-      padding-right: 10px;
-      font-size: 15px;
-      content: '\f104';
-    }
     .project-nav-wrap .left-nav:hover .text-on-hover {
       opacity: 1;
       bottom: 110px;
@@ -1915,12 +1910,6 @@ export default () => (
       padding-left: 50px;
       left: 0;
       top: 130px;
-    }
-    .project-nav-wrap .right-nav .text-on-hover:after {
-      font-family: FontAwesome;
-      padding-left: 10px;
-      font-size: 15px;
-      content: '\f105';
     }
     .project-nav-wrap .right-nav:hover .text-on-hover {
       opacity: 1;

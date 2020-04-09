@@ -1,69 +1,64 @@
+import React, { useState } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
+import { kebabCase } from 'lodash'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Filters from '../states/filters'
+import Projects from '../states/projects'
 
 export default () => {
-  const initialData = [
-    {
-      id: 1,
-      name: 'Diviya Lacouture',
-      category: 'Web Development',
-      image: '/portfolio/1.jpg'
-    },
-    {
-      id: 2,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/2.jpg'
-    },
-    {
-      id: 3,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/3.jpg'
-    },
-    {
-      id: 4,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/4.jpg'
-    },
-    {
-      id: 5,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/5.jpg'
-    },
-    {
-      id: 6,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/6.jpg'
-    },
-    {
-      id: 7,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/7.jpg'
-    },
-    {
-      id: 8,
-      name: 'Diviya Lacouture',
-      category: 'Web Design',
-      image: '/portfolio/8.jpg'
-    }
-  ]
-  let data = initialData
-  const filterReset = () => []
-  const filterWebDev = () => []
-  const filterAppDev = () => []
-  const filterWebDes = () => []
-  const filterAppDes = () => []
+  const [filters, setFilters] = useState(Filters)
+  const [projects, setProjects] = useState(Projects)
+
+  const filterReset = () => {
+    setFilters(Filters)
+    setProjects(Projects)
+  }
+  const filterWebDev = () => {
+    setFilters(
+      Filters.map((value, index) =>
+        index === 1 ? (value = true) : (value = false)
+      )
+    )
+    setProjects(
+      Projects.filter(project => project.category === 'Web Development')
+    )
+  }
+  const filterAppDev = () => {
+    setFilters(
+      Filters.map((value, index) =>
+        index === 2 ? (value = true) : (value = false)
+      )
+    )
+    setProjects(
+      Projects.filter(project => project.category === 'App Development')
+    )
+  }
+  const filterWebDes = () => {
+    setFilters(
+      Filters.map((value, index) =>
+        index === 3 ? (value = true) : (value = false)
+      )
+    )
+    setProjects(Projects.filter(project => project.category === 'Web Design'))
+  }
+  const filterAppDes = () => {
+    setFilters(
+      Filters.map((value, index) =>
+        index === 4 ? (value = true) : (value = false)
+      )
+    )
+    setProjects(Projects.filter(project => project.category === 'App Design'))
+  }
 
   return (
     <>
+      <Head>
+        <title>Ludovic Lacouture | Projects</title>
+      </Head>
       <Header />
       <div className="section big-height background-black">
         <div
@@ -91,27 +86,42 @@ export default () => {
             <div className="portfolio-filter" id="portfolio-filter">
               <ul id="filter">
                 <li>
-                  <a className="current" href="" onClick={filterReset}>
+                  <a
+                    className={filters[0] ? 'current' : ''}
+                    onClick={filterReset}
+                  >
                     all
                   </a>
                 </li>
-                <li className="">
-                  <a href="" onClick={filterWebDev}>
+                <li>
+                  <a
+                    className={filters[1] ? 'current' : ''}
+                    onClick={filterWebDev}
+                  >
                     web development
                   </a>
                 </li>
-                <li className="">
-                  <a href="" onClick={filterAppDev}>
+                <li>
+                  <a
+                    className={filters[2] ? 'current' : ''}
+                    onClick={filterAppDev}
+                  >
                     app development
                   </a>
                 </li>
-                <li className="">
-                  <a href="" onClick={filterWebDes}>
+                <li>
+                  <a
+                    className={filters[3] ? 'current' : ''}
+                    onClick={filterWebDes}
+                  >
                     web design
                   </a>
                 </li>
-                <li className="">
-                  <a href="" onClick={filterAppDes}>
+                <li>
+                  <a
+                    className={filters[4] ? 'current' : ''}
+                    onClick={filterAppDes}
+                  >
                     app design
                   </a>
                 </li>
@@ -121,11 +131,11 @@ export default () => {
         </div>
         <div className="in-container have-space" id="projects-grid">
           <Masonry>
-            {data.map(project => (
+            {projects.map(project => (
               <Link
                 key={project.id}
-                href="/projects/[project.id]"
-                as={`/projects/${project.name}`}
+                href="/project"
+                as={`/projects/${kebabCase(project.name)}`}
               >
                 <a className="portfolio-box-1 half-width have-space">
                   <img src={project.image} alt={project.name} />

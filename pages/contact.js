@@ -1,8 +1,13 @@
+import Head from 'next/head'
+
 import Header from '../components/header'
 import Footer from '../components/footer'
 
 export default () => (
   <>
+    <Head>
+      <title>Ludovic Lacouture | Contact</title>
+    </Head>
     <Header />
     <div className="section padding-top-from-nav background-black">
       <div className="container">
