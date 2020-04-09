@@ -17,41 +17,14 @@ export default () => {
     setFilters(Filters)
     setProjects(Projects)
   }
-  const filterWebDev = () => {
+  const filterProjects = category => {
     setFilters(
-      Filters.map((value, index) =>
-        index === 1 ? (value = true) : (value = false)
-      )
+      Filters.map(filter => ({
+        ...filter,
+        value: filter.category === category ? true : false
+      }))
     )
-    setProjects(
-      Projects.filter(project => project.category === 'Web Development')
-    )
-  }
-  const filterAppDev = () => {
-    setFilters(
-      Filters.map((value, index) =>
-        index === 2 ? (value = true) : (value = false)
-      )
-    )
-    setProjects(
-      Projects.filter(project => project.category === 'App Development')
-    )
-  }
-  const filterWebDes = () => {
-    setFilters(
-      Filters.map((value, index) =>
-        index === 3 ? (value = true) : (value = false)
-      )
-    )
-    setProjects(Projects.filter(project => project.category === 'Web Design'))
-  }
-  const filterAppDes = () => {
-    setFilters(
-      Filters.map((value, index) =>
-        index === 4 ? (value = true) : (value = false)
-      )
-    )
-    setProjects(Projects.filter(project => project.category === 'App Design'))
+    setProjects(Projects.filter(project => project.category === category))
   }
 
   return (
@@ -87,7 +60,7 @@ export default () => {
               <ul id="filter">
                 <li>
                   <a
-                    className={filters[0] ? 'current' : ''}
+                    className={filters[0].value ? 'current' : ''}
                     onClick={filterReset}
                   >
                     all
@@ -95,32 +68,32 @@ export default () => {
                 </li>
                 <li>
                   <a
-                    className={filters[1] ? 'current' : ''}
-                    onClick={filterWebDev}
+                    className={filters[1].value ? 'current' : ''}
+                    onClick={() => filterProjects('Web Development')}
                   >
                     web development
                   </a>
                 </li>
                 <li>
                   <a
-                    className={filters[2] ? 'current' : ''}
-                    onClick={filterAppDev}
+                    className={filters[2].value ? 'current' : ''}
+                    onClick={() => filterProjects('App Development')}
                   >
                     app development
                   </a>
                 </li>
                 <li>
                   <a
-                    className={filters[3] ? 'current' : ''}
-                    onClick={filterWebDes}
+                    className={filters[3].value ? 'current' : ''}
+                    onClick={() => filterProjects('Web Design')}
                   >
                     web design
                   </a>
                 </li>
                 <li>
                   <a
-                    className={filters[4] ? 'current' : ''}
-                    onClick={filterAppDes}
+                    className={filters[4].value ? 'current' : ''}
+                    onClick={() => filterProjects('App Design')}
                   >
                     app design
                   </a>
