@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 export default () => (
   <>
@@ -21,20 +21,20 @@ export default () => (
           <ul className="footer-social">
             <li>
               <a
-                className="github"
-                href="https://github.com/lacoludo"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
-            </li>
-            <li>
-              <a
                 className="linkedin"
                 href="https://www.linkedin.com/in/lacoludo"
                 target="_blank"
               >
-                <FaLinkedinIn />
+                <FiLinkedin />
+              </a>
+            </li>
+            <li>
+              <a
+                className="github"
+                href="https://github.com/lacoludo"
+                target="_blank"
+              >
+                <FiGithub />
               </a>
             </li>
             <li>
@@ -43,7 +43,7 @@ export default () => (
                 href="https://twitter.com/lacoludo"
                 target="_blank"
               >
-                <FaTwitter />
+                <FiTwitter />
               </a>
             </li>
           </ul>

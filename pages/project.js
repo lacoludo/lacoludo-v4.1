@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -124,7 +124,7 @@ export default () => {
                   <div className="left-nav">
                     prev
                     <div className="text-on-hover">
-                      <FaAngleLeft
+                      <FiChevronLeft
                         style={{
                           ...style,
                           paddingRight: '10px'
@@ -141,7 +141,7 @@ export default () => {
                     next
                     <div className="text-on-hover">
                       Diviya Lacouture
-                      <FaAngleRight
+                      <FiChevronRight
                         style={{
                           ...style,
                           paddingLeft: '10px'
