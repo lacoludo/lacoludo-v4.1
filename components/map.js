@@ -3,6 +3,11 @@ import GoogleMaps from 'google-map-react'
 import Map from '../styles/map'
 
 export default () => {
+  const coordinates = {
+    lat: 48.8566,
+    lng: 2.3522
+  }
+
   const createMapOptions = () => ({
     styles: Map
   })
@@ -24,11 +29,11 @@ export default () => {
             bootstrapURLKeys={{
               key: 'AIzaSyAWjyb1ni-QUtQamI3h4kcMIubHbsw0kQs'
             }}
-            center={{ lat: 48.735351, lng: 2.295592 }}
+            center={{ lat: coordinates.lat, lng: coordinates.lng }}
             zoom={10}
             options={createMapOptions}
           >
-            <Marker lat={48.735351} lng={2.295592} />
+            <Marker lat={coordinates.lat} lng={coordinates.lng} />
           </GoogleMaps>
         </div>
       </div>

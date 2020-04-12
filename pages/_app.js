@@ -3,6 +3,7 @@ import App from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
 import Page from '../components/page'
+import Fonts from '../styles/fonts'
 import Base from '../styles/base'
 import Skeleton from '../styles/skeleton'
 import Layout from '../styles/layout'
@@ -20,6 +21,7 @@ export default class extends App {
     return (
       <Page>
         <ThemeProvider theme={theme}>
+          <Fonts />
           <Base />
           <Skeleton />
           <Layout />
