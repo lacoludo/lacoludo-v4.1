@@ -44,9 +44,9 @@ export default () => {
             <div className="twelve columns">
               <div className="home-text-freelance">
                 <h1>
-                  i love
+                  I'm madly in love with my wife
                   <br />
-                  <span className="image2">diviya</span>
+                  <span className="image2">Diviya</span>
                 </h1>
               </div>
             </div>

@@ -1,7 +1,5 @@
 const withPlugins = require('next-compose-plugins')
 const withOptimizedImages = require('next-optimized-images')
-const withFonts = require('next-fonts')
-const withCSS = require('@zeit/next-css')
 
 module.exports = withPlugins([
   [
@@ -15,7 +13,5 @@ module.exports = withPlugins([
         quality: 90
       }
     }
-  ],
-  withFonts,
-  withCSS
+  ]
 ])

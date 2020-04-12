@@ -104,6 +104,7 @@ export default createGlobalStyle`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-transform: uppercase;
   }
   article,
   aside,
@@ -145,7 +146,7 @@ export default createGlobalStyle`
   // ==================================================
   body {
     background: #000000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
@@ -167,7 +168,7 @@ export default createGlobalStyle`
   h5,
   h6 {
     color: #f8f8f8;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     text-align: center;
   }

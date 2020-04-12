@@ -157,7 +157,7 @@ export default createGlobalStyle`
     text-decoration: none;
     padding: 50px 18px;
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -518,7 +518,7 @@ export default createGlobalStyle`
     display: inline-block;
   }
   .menu__item-name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -551,7 +551,7 @@ export default createGlobalStyle`
   }
 
   .menu--mohe .menu__item-label {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 2px;
@@ -608,7 +608,7 @@ export default createGlobalStyle`
   }
   .nav-social li a {
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
@@ -684,17 +684,16 @@ export default createGlobalStyle`
 
   .home-text-freelance h1 {
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 1px;
-    font-style: italic;
   }
   .home-text-freelance h1 span {
     font-size: 95px;
     line-height: 110px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #fff;
@@ -806,7 +805,7 @@ export default createGlobalStyle`
     position: relative;
     padding-left: 70px;
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 2px;
@@ -831,7 +830,7 @@ export default createGlobalStyle`
   }
   .subtitle-big {
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 300;
     font-size: 26px;
     line-height: 36px;
@@ -839,7 +838,7 @@ export default createGlobalStyle`
   }
   .subtitle-small {
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 300;
     font-size: 22px;
     line-height: 32px;
@@ -1006,18 +1005,17 @@ export default createGlobalStyle`
     line-height: 24px;
     display: block;
     margin-bottom: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     color: #fff;
     transition: all 300ms linear;
   }
 
   .menu__item-team span {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    font-style: italic;
     letter-spacing: 1px;
     color: #fff;
   }
@@ -1051,10 +1049,9 @@ export default createGlobalStyle`
   .quote-sep h4 {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     color: #fff;
     font-weight: 300;
-    font-style: italic;
     font-size: 22px;
     line-height: 34px;
     width: 100%;
@@ -1349,9 +1346,8 @@ export default createGlobalStyle`
     text-align: center;
     outline: none;
     color: #999;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
-    font-style: italic;
     font-size: 20px;
     line-height: 28px;
     text-decoration: none;
@@ -1414,7 +1410,7 @@ export default createGlobalStyle`
     margin-right: 30px;
     width: 180px;
     height: 120px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: right;
@@ -1436,7 +1432,7 @@ export default createGlobalStyle`
     font-size: 50px;
     line-height: 160px;
     vertical-align: text-bottom;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: left;
@@ -1452,7 +1448,7 @@ export default createGlobalStyle`
     z-index: 2;
     width: 100%;
     opacity: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -1495,7 +1491,7 @@ export default createGlobalStyle`
     font-weight: 700;
     letter-spacing: 1px;
     color: #999;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 13px;
     line-height: 26px;
   }
@@ -1517,7 +1513,7 @@ export default createGlobalStyle`
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 18px;
     line-height: 26px;
     pointer-events: none;
@@ -1576,7 +1572,7 @@ export default createGlobalStyle`
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 26px;
     line-height: 36px;
     transition: all 300ms linear;
@@ -1634,7 +1630,6 @@ export default createGlobalStyle`
     text-align: left;
     font-size: 18px;
     line-height: 24px;
-    font-style: italic;
   }
   .post-wrapper p {
     text-align: left;
@@ -1676,7 +1671,6 @@ export default createGlobalStyle`
   .post-wrapper blockquote {
     font-size: 18px;
     line-height: 25px;
-    font-style: italic;
     padding-top: 0;
     padding-bottom: 0;
     color: #ccc;
@@ -1694,13 +1688,12 @@ export default createGlobalStyle`
   .image-title-left {
     font-size: 12px;
     line-height: 12px;
-    font-style: italic;
     font-weight: 400;
     width: 100%;
     text-align: left;
     display: block;
     float: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     color: #ccc;
     margin-bottom: 10px;
   }
@@ -1714,13 +1707,12 @@ export default createGlobalStyle`
   .image-title-right {
     font-size: 12px;
     line-height: 12px;
-    font-style: italic;
     font-weight: 400;
     width: 100%;
     text-align: right;
     display: block;
     float: right;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     color: #ccc;
     margin-bottom: 10px;
   }
@@ -1733,7 +1725,7 @@ export default createGlobalStyle`
     display: block;
     width: 100%;
     color: #ccc;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     text-align: left;
     font-size: 15px;
@@ -1745,17 +1737,15 @@ export default createGlobalStyle`
     padding-right: 10px;
     font-size: 55px;
     line-height: 20px;
-    font-style: italic;
   }
   .comm-link {
     position: relative;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 17px;
     line-height: 20px;
-    font-style: italic;
     margin-top: 10px;
     transition: all 300ms linear;
   }
@@ -1786,7 +1776,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -1849,7 +1839,7 @@ export default createGlobalStyle`
     margin-bottom: 20px;
   }
   .sidebar-list-one li a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 15px;
     line-height: 22px;
     font-weight: 500;
@@ -1888,7 +1878,7 @@ export default createGlobalStyle`
     margin-bottom: 14px;
   }
   .sidebar-list-two li a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 500;
@@ -1926,9 +1916,8 @@ export default createGlobalStyle`
   .comment .time {
     position: relative;
     padding-left: 110px;
-    font-style: italic;
     padding-top: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 13px;
     line-height: 13px;
     padding-bottom: 3px;
@@ -1944,7 +1933,7 @@ export default createGlobalStyle`
   }
   .comment a {
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 700;
@@ -1961,7 +1950,7 @@ export default createGlobalStyle`
 
   #ajax-form {
     width: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 10px;
     line-height: 14px;
     color: #ccc;
@@ -1969,7 +1958,7 @@ export default createGlobalStyle`
   }
   #ajax-form label {
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 14px;
     line-height: 30px;
   }
@@ -1978,7 +1967,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -1993,7 +1982,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -2158,7 +2147,7 @@ export default createGlobalStyle`
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: rgba(0, 0, 0, 0.4);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -2170,7 +2159,7 @@ export default createGlobalStyle`
 
   .footer p {
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -2214,7 +2203,7 @@ export default createGlobalStyle`
   }
   .footer-social li a {
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
@@ -2271,7 +2260,7 @@ export default createGlobalStyle`
     border-radius: 3px;
     display: block;
     float: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 6px 20px;
@@ -2291,7 +2280,7 @@ export default createGlobalStyle`
     background-color: #fff;
     padding: 3px 10px;
     z-index: 200;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 700;
     font-size: 14px;
   }
