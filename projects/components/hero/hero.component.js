@@ -13,8 +13,6 @@ export default () => (
               I'm madly in love with my wife
               <br />
               <span className="image2">Diviya</span>
-              <br />
-              (Sorry to sleep so late)
             </h1>
           </div>
         </div>
