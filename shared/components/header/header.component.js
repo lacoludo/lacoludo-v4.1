@@ -1,7 +1,14 @@
 import Link from 'next/link'
 
+import ActiveLink from '../active-link/active-link.component'
+
 export default () => (
   <>
+    <style jsx>{`
+      .active {
+        color: #00d8ff;
+      }
+    `}</style>
     <nav className="menu-back cbp-af-header" id="menu-wrap">
       <div className="container">
         <div className="twelve columns">
@@ -13,19 +20,19 @@ export default () => (
             </Link>
             <ul>
               <li>
-                <Link href="/">
+                <ActiveLink activeClassName="active" href="/">
                   <a>Projects</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li>
-                <Link href="/about">
+                <ActiveLink activeClassName="active" href="/about">
                   <a>About</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li>
-                <Link href="/contact">
+                <ActiveLink activeClassName="active" href="/contact">
                   <a>Contact</a>
-                </Link>
+                </ActiveLink>
               </li>
             </ul>
           </div>

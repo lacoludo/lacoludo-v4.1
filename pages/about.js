@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '../shared/components/header/header.component'
+import Footer from '../shared/components/footer/footer.component'
 
 export default () => (
   <>

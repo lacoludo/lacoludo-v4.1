@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import { color } from '../styles/color'
+import Header from '../shared/components/header/header.component'
+import Footer from '../shared/components/footer/footer.component'
+import { color } from '../shared/styles/color.style'
 
 export default () => {
   const style = {

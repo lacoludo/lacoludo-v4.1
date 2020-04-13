@@ -1,6 +1,6 @@
 import GoogleMaps from 'google-map-react'
 
-import Map from '../styles/map'
+import Map from './map.style'
 
 export default () => {
   const coordinates = {

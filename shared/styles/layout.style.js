@@ -157,7 +157,7 @@ export default createGlobalStyle`
     text-decoration: none;
     padding: 50px 18px;
     display: block;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -518,7 +518,7 @@ export default createGlobalStyle`
     display: inline-block;
   }
   .menu__item-name {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -551,7 +551,7 @@ export default createGlobalStyle`
   }
 
   .menu--mohe .menu__item-label {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 2px;
@@ -608,7 +608,7 @@ export default createGlobalStyle`
   }
   .nav-social li a {
     position: relative;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
@@ -684,7 +684,7 @@ export default createGlobalStyle`
 
   .home-text-freelance h1 {
     position: relative;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
@@ -693,7 +693,7 @@ export default createGlobalStyle`
   .home-text-freelance h1 span {
     font-size: 95px;
     line-height: 110px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #fff;
@@ -805,7 +805,7 @@ export default createGlobalStyle`
     position: relative;
     padding-left: 70px;
     display: block;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 2px;
@@ -830,7 +830,7 @@ export default createGlobalStyle`
   }
   .subtitle-big {
     text-align: left;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 300;
     font-size: 26px;
     line-height: 36px;
@@ -838,7 +838,7 @@ export default createGlobalStyle`
   }
   .subtitle-small {
     text-align: left;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 300;
     font-size: 22px;
     line-height: 32px;
@@ -1005,14 +1005,14 @@ export default createGlobalStyle`
     line-height: 24px;
     display: block;
     margin-bottom: 15px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     color: #fff;
     transition: all 300ms linear;
   }
 
   .menu__item-team span {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -1049,7 +1049,7 @@ export default createGlobalStyle`
   .quote-sep h4 {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     color: #fff;
     font-weight: 300;
     font-size: 22px;
@@ -1346,7 +1346,7 @@ export default createGlobalStyle`
     text-align: center;
     outline: none;
     color: #999;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -1410,7 +1410,7 @@ export default createGlobalStyle`
     margin-right: 30px;
     width: 180px;
     height: 120px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: right;
@@ -1432,7 +1432,7 @@ export default createGlobalStyle`
     font-size: 50px;
     line-height: 160px;
     vertical-align: text-bottom;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: left;
@@ -1448,7 +1448,7 @@ export default createGlobalStyle`
     z-index: 2;
     width: 100%;
     opacity: 0;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -1491,7 +1491,7 @@ export default createGlobalStyle`
     font-weight: 700;
     letter-spacing: 1px;
     color: #999;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 13px;
     line-height: 26px;
   }
@@ -1513,7 +1513,7 @@ export default createGlobalStyle`
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 18px;
     line-height: 26px;
     pointer-events: none;
@@ -1572,7 +1572,7 @@ export default createGlobalStyle`
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 26px;
     line-height: 36px;
     transition: all 300ms linear;
@@ -1693,7 +1693,7 @@ export default createGlobalStyle`
     text-align: left;
     display: block;
     float: left;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     color: #ccc;
     margin-bottom: 10px;
   }
@@ -1712,7 +1712,7 @@ export default createGlobalStyle`
     text-align: right;
     display: block;
     float: right;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     color: #ccc;
     margin-bottom: 10px;
   }
@@ -1725,7 +1725,7 @@ export default createGlobalStyle`
     display: block;
     width: 100%;
     color: #ccc;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     text-align: left;
     font-size: 15px;
@@ -1741,7 +1741,7 @@ export default createGlobalStyle`
   .comm-link {
     position: relative;
     display: inline-block;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 17px;
@@ -1776,7 +1776,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -1839,7 +1839,7 @@ export default createGlobalStyle`
     margin-bottom: 20px;
   }
   .sidebar-list-one li a {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 15px;
     line-height: 22px;
     font-weight: 500;
@@ -1878,7 +1878,7 @@ export default createGlobalStyle`
     margin-bottom: 14px;
   }
   .sidebar-list-two li a {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 500;
@@ -1917,7 +1917,7 @@ export default createGlobalStyle`
     position: relative;
     padding-left: 110px;
     padding-top: 15px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 13px;
     line-height: 13px;
     padding-bottom: 3px;
@@ -1933,7 +1933,7 @@ export default createGlobalStyle`
   }
   .comment a {
     position: relative;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 700;
@@ -1950,7 +1950,7 @@ export default createGlobalStyle`
 
   #ajax-form {
     width: 100%;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 10px;
     line-height: 14px;
     color: #ccc;
@@ -1958,7 +1958,7 @@ export default createGlobalStyle`
   }
   #ajax-form label {
     display: block;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 14px;
     line-height: 30px;
   }
@@ -1967,7 +1967,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -1982,7 +1982,7 @@ export default createGlobalStyle`
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 13px;
@@ -2147,7 +2147,7 @@ export default createGlobalStyle`
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: rgba(0, 0, 0, 0.4);
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -2159,7 +2159,7 @@ export default createGlobalStyle`
 
   .footer p {
     text-align: left;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -2203,7 +2203,7 @@ export default createGlobalStyle`
   }
   .footer-social li a {
     position: relative;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
@@ -2260,7 +2260,7 @@ export default createGlobalStyle`
     border-radius: 3px;
     display: block;
     float: left;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 6px 20px;
@@ -2280,7 +2280,7 @@ export default createGlobalStyle`
     background-color: #fff;
     padding: 3px 10px;
     z-index: 200;
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Gotham-Rounded-Light', sans-serif;
     font-weight: 700;
     font-size: 14px;
   }
