@@ -5,16 +5,14 @@ import Footer from '../shared/components/footer/footer.component'
 import Hero from '../projects/components/hero/hero.component'
 import Portfolio from '../projects/components/portfolio/portfolio.component'
 
-export default () => {
-  return (
-    <>
-      <Head>
-        <title>Ludovic Lacouture | Projects</title>
-      </Head>
-      <Header />
-      <Hero />
-      <Portfolio />
-      <Footer />
-    </>
-  )
-}
+export default () => (
+  <>
+    <Head>
+      <title>Ludovic Lacouture | Projects</title>
+    </Head>
+    <Header />
+    <Hero />
+    <Portfolio />
+    <Footer />
+  </>
+)

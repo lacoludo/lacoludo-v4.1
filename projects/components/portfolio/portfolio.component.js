@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
+import { Tooltip } from 'react-tippy'
 import { kebabCase } from 'lodash'
 
 import Filters from '../../states/filters.state'
@@ -83,7 +84,13 @@ export default () => {
               as={`/projects/${kebabCase(project.name)}`}
             >
               <a className="portfolio-box-1 half-width have-space">
-                <img src={project.image} alt={project.name} />
+                <Tooltip
+                  followCursor="true"
+                  position="bottom"
+                  title={project.name}
+                >
+                  <img src={project.image} alt={project.name} />
+                </Tooltip>
               </a>
             </Link>
           ))}

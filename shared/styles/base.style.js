@@ -168,8 +168,6 @@ export default createGlobalStyle`
   h5,
   h6 {
     color: #f8f8f8;
-    font-family: 'Gotham-Rounded-Light', sans-serif;
-    font-weight: 700;
     text-align: center;
   }
   h1 a,
