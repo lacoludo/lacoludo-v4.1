@@ -73,7 +73,6 @@ export default () => (
               <button
                 className="send_message button-effect button--moema button--text-thick button--text-upper button--size-s"
                 id="send"
-                data-lang="en"
               >
                 submit
               </button>

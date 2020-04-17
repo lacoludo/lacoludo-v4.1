@@ -10,7 +10,7 @@ export default () => (
         <div className="twelve columns">
           <div className="home-text-freelance">
             <h1>
-              I'm madly in love with my wife
+              I miss U
               <br />
               <span className="image2">Diviya</span>
             </h1>

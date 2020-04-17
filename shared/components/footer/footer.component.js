@@ -4,20 +4,14 @@ export default () => (
   <>
     <div className="section padding-top-bottom background-black">
       <div className="container">
-        <div
-          className="six columns footer"
-          data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s"
-        >
+        <div className="six columns footer">
           <p>
             Call me at <a href="#">+33 7 81 81 49 79</a>
             <br />
             or say hello at <a href="#">lacoludo@outlook.com</a>
           </p>
         </div>
-        <div
-          className="six columns"
-          data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s"
-        >
+        <div className="six columns">
           <ul className="footer-social">
             <li>
               <a

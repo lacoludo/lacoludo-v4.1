@@ -750,26 +750,6 @@ export default createGlobalStyle`
     height: 25px;
   }
 
-  .scroll-to-top {
-    position: fixed;
-    cursor: pointer;
-    top: 120px;
-    opacity: 0.8;
-    right: 40px;
-    width: 30px;
-    height: 30px;
-    display: none;
-    z-index: 9999;
-    background-image: url('/up-arrow.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    transition: all 300ms linear;
-  }
-  .scroll-to-top:hover {
-    opacity: 1;
-  }
-
   .title {
     position: releative;
     display: block;

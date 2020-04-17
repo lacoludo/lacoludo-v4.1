@@ -87,7 +87,13 @@ export default () => {
                 <Tooltip
                   followCursor="true"
                   position="bottom"
-                  title={project.name}
+                  html={
+                    <>
+                      <div>{project.name}</div>
+                      <div>{project.category}</div>
+                    </>
+                  }
+                  touchHold="true"
                 >
                   <img src={project.image} alt={project.name} />
                 </Tooltip>

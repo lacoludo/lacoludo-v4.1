@@ -2,11 +2,17 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
+import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
+import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
 import Header from '../shared/components/header/header.component'
 import Footer from '../shared/components/footer/footer.component'
+import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
 import { color } from '../shared/styles/color.style'
 
 export default () => {
+  AnimatedHeader()
+  FadeOnScroll()
+
   const style = {
     color,
     fontSize: '15px',
@@ -156,6 +162,7 @@ export default () => {
         </div>
       </div>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }
