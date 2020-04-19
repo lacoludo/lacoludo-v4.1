@@ -2,20 +2,20 @@ import Head from 'next/head'
 
 import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
 import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
-import Header from '../shared/components/header/header.component'
+import Menu from '../shared/components/menu/menu.component'
 import Footer from '../shared/components/footer/footer.component'
 import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
 
 export default () => {
-  AnimatedHeader()
-  FadeOnScroll()
+  // AnimatedHeader()
+  // FadeOnScroll()
 
   return (
     <>
       <Head>
         <title>Ludovic Lacouture | About</title>
       </Head>
-      <Header />
+      <Menu />
       <div className="section padding-top-from-nav padding-bottom background-black">
         <div className="container">
           <div className="six columns fade-elements">
