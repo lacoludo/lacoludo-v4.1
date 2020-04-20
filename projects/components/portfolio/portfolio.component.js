@@ -26,11 +26,11 @@ export default () => {
   }
 
   return (
-    <div className="section padding-top-bottom background-black">
-      <div className="container">
-        <div className="twelve columns">
-          <div className="portfolio-filter" id="portfolio-filter">
-            <ul id="filter">
+    <div className='section padding-top-bottom background-black'>
+      <div className='container'>
+        <div className='twelve columns'>
+          <div className='portfolio-filter' id='portfolio-filter'>
+            <ul id='filter'>
               <li>
                 <a
                   className={filters[0].value ? 'current' : ''}
@@ -75,25 +75,25 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="in-container have-space" id="projects-grid">
+      <div className='in-container have-space' id='projects-grid'>
         <Masonry>
           {projects.map(project => (
             <Link
               key={project.id}
-              href="/project"
+              href='/project'
               as={`/projects/${kebabCase(project.name)}`}
             >
-              <a className="portfolio-box-1 half-width have-space">
+              <a className='portfolio-box-1 half-width have-space'>
                 <Tooltip
-                  followCursor="true"
-                  position="bottom"
+                  followCursor='true'
+                  position='bottom'
                   html={
                     <>
                       <div>{project.name}</div>
                       <div>{project.category}</div>
                     </>
                   }
-                  touchHold="true"
+                  touchHold='true'
                 >
                   <img src={project.image} alt={project.name} />
                 </Tooltip>

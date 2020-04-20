@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import { useMedia } from 'react-use'
 
-import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
-import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
+import Theme from '../shared/styles/theme.style'
+// import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
+// import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
 import Menu from '../shared/components/menu/menu.component'
 import Footer from '../shared/components/footer/footer.component'
 import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
@@ -12,16 +14,20 @@ export default () => {
   // AnimatedHeader()
   // FadeOnScroll()
 
+  const isMD = useMedia(`(min-width: ${Theme.breakpoints[1]})`)
+
   return (
     <>
       <Head>
         <title>Ludovic Lacouture | Contact</title>
       </Head>
-      <Menu />
+      {!isMD ? <Header /> : <></>}
+      {isMD ? <MenuDesktop /> : <></>}
       <Form />
       <Map />
-      <Footer />
-      <ScrollToTop />
+      {!isMD ? <MenuMobile /> : <></>}
+      {isMD ? <Footer /> : <></>}
+      {isMD ? <ScrollToTop /> : <></>}
     </>
   )
 }

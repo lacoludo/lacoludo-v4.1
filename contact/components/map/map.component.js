@@ -15,16 +15,16 @@ export default () => {
   const Marker = () => (
     <>
       <img
-        src="/cd-icon-location.svg"
+        src='/cd-icon-location.svg'
         style={{ transform: 'translate(-50%, -50%)' }}
       />
     </>
   )
 
   return (
-    <div className="section padding-bottom background-black">
-      <div id="cd-google-map">
-        <div id="google-container">
+    <div className='section padding-bottom background-black'>
+      <div id='cd-google-map'>
+        <div id='google-container'>
           <GoogleMaps
             bootstrapURLKeys={{
               key: 'AIzaSyAWjyb1ni-QUtQamI3h4kcMIubHbsw0kQs'

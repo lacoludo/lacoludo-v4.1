@@ -6,8 +6,6 @@ import Page from '../shared/components/page/page.component'
 import Theme from '../shared/styles/theme.style'
 import Global from '../shared/styles/global.style'
 
-// import 'react-tippy/dist/tippy.css'
-
 export default class extends App {
   render() {
     const { Component, pageProps } = this.props

@@ -2316,7 +2316,7 @@ export default createGlobalStyle`
     }
   }
 
-  @media only screen and (max-width: 1199px) {
+  /* @media only screen and (max-width: 1199px) {
     .cbp-af-header.cbp-af-header-shrink .logo {
       width: 98px;
       height: 20px;
@@ -2622,7 +2622,7 @@ export default createGlobalStyle`
     .home-text-wrap {
       margin-top: 0;
     }
-  }
+  } */
 
   @media only screen and (max-width: 1000px) {
     .menu-back {

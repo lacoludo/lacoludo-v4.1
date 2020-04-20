@@ -21,10 +21,10 @@ export default () => (
       style={{ right: '45px', bottom: '150px', zIndex: 5 }}
     >
       <Tooltip
-        followCursor="true"
-        position="bottom"
-        title="Top"
-        touchHold="true"
+        followCursor='true'
+        position='bottom'
+        title='Top'
+        touchHold='true'
       >
         <ScrollToTop />
       </Tooltip>

@@ -1,9 +1,11 @@
 import Head from 'next/head'
+import { useMedia } from 'react-use'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
-import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
-import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
+import Theme from '../shared/styles/theme.style'
+// import AnimatedHeader from '../shared/hooks/animated-header/animated-header.hook'
+// import FadeOnScroll from '../shared/hooks/fade-on-scroll/fade-on-scroll.hook'
 import Menu from '../shared/components/menu/menu.component'
 import Footer from '../shared/components/footer/footer.component'
 import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
@@ -12,6 +14,8 @@ import { color } from '../shared/styles/color.style'
 export default () => {
   // AnimatedHeader()
   // FadeOnScroll()
+
+  const isMD = useMedia(`(min-width: ${Theme.breakpoints[1]})`)
 
   const style = {
     color,
@@ -24,19 +28,20 @@ export default () => {
       <Head>
         <title>Ludovic Lacouture | Project: Diviya Lacouture</title>
       </Head>
-      <Menu />
-      <div className="section big-height">
+      {!isMD ? <Header /> : <></>}
+      {isMD ? <MenuDesktop /> : <></>}
+      <div className='section big-height'>
         <div
-          className="parallax fade-elements"
+          className='parallax fade-elements'
           style={{ backgroundImage: 'url(/portfolio/project/parallax.jpg)' }}
         ></div>
       </div>
-      <div className="section padding-top-bottom background-black">
-        <div className="container">
-          <div className="six columns">
-            <div className="title">
+      <div className='section padding-top-bottom background-black'>
+        <div className='container'>
+          <div className='six columns'>
+            <div className='title'>
               <h3>Toccata</h3>
-              <ul className="list">
+              <ul className='list'>
                 <li>
                   Designer: <strong>SVM</strong>
                 </li>
@@ -49,8 +54,8 @@ export default () => {
               </ul>
             </div>
           </div>
-          <div className="six columns">
-            <div className="subtitle-big">
+          <div className='six columns'>
+            <div className='subtitle-big'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
               arcu, suscipit in sollicitudin sed, feugiat a nunc. Cras
               condimentum neque augue, nec auctor lorem semper a. Curabitur leo
@@ -63,24 +68,24 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="section padding-bottom background-black">
-        <div className="container">
-          <div className="six columns">
-            <div className="img-wrap">
-              <img src="/portfolio/project/1.gif" alt="" />
+      <div className='section padding-bottom background-black'>
+        <div className='container'>
+          <div className='six columns'>
+            <div className='img-wrap'>
+              <img src='/portfolio/project/1.gif' alt='' />
             </div>
           </div>
-          <div className="six columns">
-            <div className="img-wrap">
-              <img src="/portfolio/project/2.gif" alt="" />
+          <div className='six columns'>
+            <div className='img-wrap'>
+              <img src='/portfolio/project/2.gif' alt='' />
             </div>
           </div>
         </div>
       </div>
-      <div className="section padding-bottom background-black">
-        <div className="container">
-          <div className="eight columns offset-by-two">
-            <div className="subtitle-small">
+      <div className='section padding-bottom background-black'>
+        <div className='container'>
+          <div className='eight columns offset-by-two'>
+            <div className='subtitle-small'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
               arcu, suscipit in sollicitudin sed, feugiat a nunc. Cras
               condimentum neque augue, nec auctor lorem semper a. Curabitur leo
@@ -93,43 +98,43 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="section padding-bottom background-black">
-        <div className="container">
-          <div className="twelve columns">
-            <div className="img-wrap">
-              <img src="/portfolio/project/1.jpg" alt="" />
+      <div className='section padding-bottom background-black'>
+        <div className='container'>
+          <div className='twelve columns'>
+            <div className='img-wrap'>
+              <img src='/portfolio/project/1.jpg' alt='' />
             </div>
           </div>
-          <div className="clear"></div>
-          <div className="six columns">
-            <div className="img-wrap">
-              <img src="/portfolio/project/3.gif" alt="" />
+          <div className='clear'></div>
+          <div className='six columns'>
+            <div className='img-wrap'>
+              <img src='/portfolio/project/3.gif' alt='' />
             </div>
           </div>
-          <div className="six columns">
-            <figure className="vimeo">
-              <a href="http://player.vimeo.com/video/212869493">
-                <img src="/portfolio/project/3.jpg" alt="image" />
+          <div className='six columns'>
+            <figure className='vimeo'>
+              <a href='http://player.vimeo.com/video/212869493'>
+                <img src='/portfolio/project/3.jpg' alt='image' />
               </a>
             </figure>
           </div>
-          <div className="clear"></div>
-          <div className="twelve columns">
-            <div className="img-wrap">
-              <img src="/portfolio/project/2.jpg" alt="" />
+          <div className='clear'></div>
+          <div className='twelve columns'>
+            <div className='img-wrap'>
+              <img src='/portfolio/project/2.jpg' alt='' />
             </div>
           </div>
         </div>
       </div>
-      <div className="section padding-bottom background-black">
-        <div className="container">
-          <div className="twelve columns">
-            <div className="project-nav-wrap">
-              <Link href="/project">
+      <div className='section padding-bottom background-black'>
+        <div className='container'>
+          <div className='twelve columns'>
+            <div className='project-nav-wrap'>
+              <Link href='/project'>
                 <a>
-                  <div className="left-nav">
+                  <div className='left-nav'>
                     prev
-                    <div className="text-on-hover">
+                    <div className='text-on-hover'>
                       <FiChevronLeft
                         style={{
                           ...style,
@@ -141,11 +146,11 @@ export default () => {
                   </div>
                 </a>
               </Link>
-              <Link href="/project">
+              <Link href='/project'>
                 <a>
-                  <div className="right-nav">
+                  <div className='right-nav'>
                     next
-                    <div className="text-on-hover">
+                    <div className='text-on-hover'>
                       Diviya Lacouture
                       <FiChevronRight
                         style={{
@@ -161,8 +166,9 @@ export default () => {
           </div>
         </div>
       </div>
-      <Footer />
-      <ScrollToTop />
+      {!isMD ? <MenuMobile /> : <></>}
+      {isMD ? <Footer /> : <></>}
+      {isMD ? <ScrollToTop /> : <></>}
     </>
   )
 }
