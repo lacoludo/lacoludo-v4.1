@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { FiAtSign, FiGrid, FiUser } from 'react-icons/fi'
 
-import MenuStyle from './menu-mobile.style'
 import ActiveLink from '../active-link/active-link.component'
 
 const MenuMobile = styled.nav`
@@ -19,7 +18,22 @@ const MenuMobile = styled.nav`
 export default () => {
   return (
     <>
-      <MenuStyle />
+      <style jsx>{`
+        .nav-link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 1;
+          min-width: 50px;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 13px;
+          color: #ffffff;
+          text-decoration: none;
+          transition: background-color 0.1s ease-in-out;
+        }
+      `}</style>
       <MenuMobile>
         <ActiveLink activeClassName='active' href='/'>
           <a className='nav-link'>

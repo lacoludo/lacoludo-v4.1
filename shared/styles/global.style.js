@@ -4,6 +4,7 @@ import Skeleton from './skeleton.style'
 import Layout from './layout.style'
 import Color from './color.style'
 import Tippy from './tippy.style'
+import Menu from './menu.style'
 
 export default () => (
   <>
@@ -13,5 +14,6 @@ export default () => (
     <Layout />
     <Color />
     <Tippy />
+    <Menu />
   </>
 )

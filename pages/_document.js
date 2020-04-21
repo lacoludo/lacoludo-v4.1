@@ -2,6 +2,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import * as snippet from '@segment/snippet'
 
+import { mediaStyles } from '../shared/utils/media.util'
+
 const { NODE_ENV = 'development' } = process.env
 
 export default class extends Document {
@@ -41,6 +43,10 @@ export default class extends Document {
     return (
       <Html>
         <Head>
+          <style
+            type='text/css'
+            dangerouslySetInnerHTML={{ __html: mediaStyles }}
+          />
           <script dangerouslySetInnerHTML={{ __html: this.renderSnippet() }} />
         </Head>
         <body>
