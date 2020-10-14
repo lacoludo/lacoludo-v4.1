@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import { cloneElement, Children } from 'react';
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -13,9 +13,9 @@ export default ({ children, activeClassName, ...props }) => {
 
   return (
     <Link {...props}>
-      {React.cloneElement(child, {
+      {cloneElement(child, {
         className: className || null
       })}
     </Link>
-  )
+  );
 }

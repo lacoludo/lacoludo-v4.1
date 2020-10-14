@@ -1,4 +1,3 @@
-import React from 'react'
 import Router from 'next/router'
 
 Router.events.on('routeChangeComplete', url => window.analytics.page(url))

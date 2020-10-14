@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import Link from 'next/link'
 
 import ActiveLink from '../active-link/active-link.component'

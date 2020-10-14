@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
 import { Tooltip } from 'react-tippy'
