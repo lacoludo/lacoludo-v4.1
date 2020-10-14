@@ -1,4 +1,4 @@
-export default [
+const ProjectsState = [
   {
     id: 1,
     name: 'Diviya Lacouture',
@@ -48,3 +48,5 @@ export default [
     image: '/portfolio/8.jpg'
   }
 ]
+
+export default ProjectsState

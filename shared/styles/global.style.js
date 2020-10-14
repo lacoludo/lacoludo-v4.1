@@ -6,7 +6,7 @@ import Color from './color.style'
 import Tippy from './tippy.style'
 import Menu from './menu.style'
 
-export default () => (
+const GlobalStyle = () => (
   <>
     <Fonts />
     <Base />
@@ -17,3 +17,5 @@ export default () => (
     <Menu />
   </>
 )
+
+export default GlobalStyle

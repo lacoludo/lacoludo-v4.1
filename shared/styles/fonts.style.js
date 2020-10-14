@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const FontsStyle = createGlobalStyle`
 	@font-face {
     font-family: 'Gotham-Rounded-Light';
     src: url('/fonts/gotham-rounded/gotham-rounded-light.woff2') format('woff2'),
@@ -9,3 +9,5 @@ export default createGlobalStyle`
     font-style: normal;
 	}
 `
+
+export default FontsStyle

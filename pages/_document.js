@@ -6,7 +6,7 @@ import { mediaStyles } from '../shared/utils/media.util'
 
 const { NODE_ENV = 'development' } = process.env
 
-export default class extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
@@ -57,3 +57,5 @@ export default class extends Document {
     )
   }
 }
+
+export default MyDocument

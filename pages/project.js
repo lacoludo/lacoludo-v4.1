@@ -9,10 +9,10 @@ import Header from '../shared/components/header/header.component'
 import MenuDesktop from '../shared/components/menu-desktop/menu-desktop.component'
 import MenuMobile from '../shared/components/menu-mobile/menu-mobile.component'
 import Footer from '../shared/components/footer/footer.component'
-import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
+import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top.component'
 import { color } from '../shared/styles/color.style'
 
-export default () => {
+const Project = () => {
   const style = {
     color,
     fontSize: '15px',
@@ -179,3 +179,5 @@ export default () => {
     </>
   )
 }
+
+export default Project

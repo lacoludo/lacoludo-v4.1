@@ -2,7 +2,7 @@ import GoogleMaps from 'google-map-react'
 
 import Map from './map.style'
 
-export default () => {
+const MapComponent = () => {
   const coordinates = {
     lat: 48.8566,
     lng: 2.3522
@@ -40,3 +40,5 @@ export default () => {
     </div>
   )
 }
+
+export default MapComponent

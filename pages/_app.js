@@ -5,7 +5,7 @@ import Page from '../shared/components/page/page.component'
 import Theme from '../shared/styles/theme.style'
 import Global from '../shared/styles/global.style'
 
-export default class extends App {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
 
@@ -19,3 +19,5 @@ export default class extends App {
     )
   }
 }
+
+export default MyApp

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 export const color = '#00d8ff'
 
-export default createGlobalStyle`
+const ColorStyle = createGlobalStyle`
   a:hover,
   a:focus,
   .menu--mohe .menu__item-name.curent-nav,
@@ -71,3 +71,5 @@ export default createGlobalStyle`
     border-bottom: 1px solid ${color};
   }
 `
+
+export default ColorStyle

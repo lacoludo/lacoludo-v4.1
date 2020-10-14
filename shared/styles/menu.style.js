@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const MenuStyle = createGlobalStyle`
 	.active {
 		color: #00d8ff !important;
 	}
 `
+
+export default MenuStyle

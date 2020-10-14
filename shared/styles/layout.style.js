@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const LayoutStyle = createGlobalStyle`
   @keyframes rotate {
     0% {
       transform: rotate(0);
@@ -2856,3 +2856,5 @@ export default createGlobalStyle`
     }
   }
 `
+
+export default LayoutStyle

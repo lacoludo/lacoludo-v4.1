@@ -1,4 +1,4 @@
-export default [
+const FiltersState = [
   {
     category: 'All',
     value: true
@@ -20,3 +20,5 @@ export default [
     value: false
   }
 ]
+
+export default FiltersState

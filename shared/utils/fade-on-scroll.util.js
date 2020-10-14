@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default () =>
+const FadeOnScrollUtil = () =>
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const $Fade = document.getElementsByClassName('fade-elements')
@@ -11,3 +11,5 @@ export default () =>
       })
     })
   }, [])
+
+export default FadeOnScrollUtil

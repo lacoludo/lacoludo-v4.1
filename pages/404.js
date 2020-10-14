@@ -21,7 +21,7 @@ const ErrorMessage = styled.div`
   ${typography}
 `
 
-export default () => (
+const Custom404 = () => (
   <ErrorWrapper>
     <ErrorCode color='danger' fontSize={[4, 5, 6, 7]}>
       404
@@ -31,3 +31,5 @@ export default () => (
     </ErrorMessage>
   </ErrorWrapper>
 )
+
+export default Custom404

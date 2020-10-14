@@ -7,9 +7,9 @@ import Header from '../shared/components/header/header.component'
 import MenuDesktop from '../shared/components/menu-desktop/menu-desktop.component'
 import MenuMobile from '../shared/components/menu-mobile/menu-mobile.component'
 import Footer from '../shared/components/footer/footer.component'
-import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top'
+import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top.component'
 
-export default () => (
+const About = () => (
   <>
     <Head>
       <title>Ludovic Lacouture | About</title>
@@ -835,3 +835,5 @@ export default () => (
     </MediaContextProvider>
   </>
 )
+
+export default About

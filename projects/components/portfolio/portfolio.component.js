@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
 import { Tooltip } from 'react-tippy'
@@ -7,7 +7,7 @@ import { kebabCase } from 'lodash'
 import Filters from '../../states/filters.state'
 import Projects from '../../states/projects.state'
 
-export default () => {
+const PortfolioComponent = () => {
   const [filters, setFilters] = useState(Filters)
   const [projects, setProjects] = useState(Projects)
 
@@ -105,3 +105,5 @@ export default () => {
     </div>
   )
 }
+
+export default PortfolioComponent

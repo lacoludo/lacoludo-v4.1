@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const TippyStyle = createGlobalStyle`
 	.tippy-touch {
 		cursor: pointer !important;
 	}
@@ -534,3 +534,5 @@ export default createGlobalStyle`
 		}
 	}
 `
+
+export default TippyStyle

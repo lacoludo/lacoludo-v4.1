@@ -14,7 +14,7 @@ const ScrollToTop = styled.div`
   }
 `
 
-export default () => (
+const ScrollToTopComponent = () => (
   <>
     <ScrollUp
       showUnder={525}
@@ -31,3 +31,5 @@ export default () => (
     </ScrollUp>
   </>
 )
+
+export default ScrollToTopComponent

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const BaseStyle = createGlobalStyle`
   // Table of Content
   // ==================================================
   // #Reset & Basics
@@ -385,3 +385,5 @@ export default createGlobalStyle`
     background: rgba(100, 100, 100, 0.2); // Safari
   }
 `
+
+export default BaseStyle

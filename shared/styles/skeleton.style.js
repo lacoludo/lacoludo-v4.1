@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+const SkeletonStyle = createGlobalStyle`
   .container {
     position: relative;
     width: 1320px;
@@ -588,3 +588,5 @@ export default createGlobalStyle`
     height: 0;
   }
 `
+
+export default SkeletonStyle

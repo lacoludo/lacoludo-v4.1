@@ -29,10 +29,12 @@ const Logo = styled.div`
   transition: background-color 0.1s ease-in-out;
 `
 
-export default () => (
+const HeaderComponent = () => (
   <>
     <HeaderWrapper>
       <Logo>Lacouture Ludovic</Logo>
     </HeaderWrapper>
   </>
 )
+
+export default HeaderComponent

@@ -1,4 +1,4 @@
-export default () => (
+const FormComponent = () => (
   <>
     <div className='section padding-top-from-nav background-black'>
       <div className='container'>
@@ -96,3 +96,5 @@ export default () => (
     </div>
   </>
 )
+
+export default FormComponent

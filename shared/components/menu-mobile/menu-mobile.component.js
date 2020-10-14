@@ -15,7 +15,7 @@ const MenuMobile = styled.nav`
   z-index: 1;
 `
 
-export default () => {
+const MenuMobileComponent = () => {
   return (
     <>
       <style jsx>{`
@@ -57,3 +57,5 @@ export default () => {
     </>
   )
 }
+
+export default MenuMobileComponent
