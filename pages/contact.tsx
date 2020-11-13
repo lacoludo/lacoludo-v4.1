@@ -11,30 +11,33 @@ import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top.compon
 import Form from '../contact/components/form/form.component'
 import Map from '../contact/components/map/map.component'
 
-const Contact = () => (
-  <>
-    <Head>
-      <title>Ludovic Lacouture | Contact</title>
-    </Head>
-    <MediaContextProvider>
-      <Media greaterThan='sm'>{FadeOnScroll()}</Media>
-      <Media lessThan='md'>
-        <Header />
-      </Media>
-      <Media greaterThan='sm'>
-        <MenuDesktop />
-      </Media>
-      <Form />
-      <Map />
-      <Media greaterThan='sm'>
-        <Footer />
-        <ScrollToTop />
-      </Media>
-      <Media lessThan='md'>
-        <MenuMobile />
-      </Media>
-    </MediaContextProvider>
-  </>
-)
+const Contact = () => {
+  FadeOnScroll()
+
+  return (
+    <>
+      <Head>
+        <title>Ludovic Lacouture | Contact</title>
+      </Head>
+      <MediaContextProvider>
+        <Media lessThan='md'>
+          <Header />
+        </Media>
+        <Media greaterThan='sm'>
+          <MenuDesktop />
+        </Media>
+        <Form />
+        <Map />
+        <Media greaterThan='sm'>
+          <Footer />
+          <ScrollToTop />
+        </Media>
+        <Media lessThan='md'>
+          <MenuMobile />
+        </Media>
+      </MediaContextProvider>
+    </>
+  )
+}
 
 export default Contact

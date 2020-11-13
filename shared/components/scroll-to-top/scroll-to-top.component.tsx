@@ -21,10 +21,9 @@ const ScrollToTopComponent = () => (
       style={{ right: '45px', bottom: '150px', zIndex: 5 }}
     >
       <Tooltip
-        followCursor='true'
+        followCursor={true}
         position='bottom'
         title='Top'
-        touchHold='true'
       >
         <ScrollToTop />
       </Tooltip>
