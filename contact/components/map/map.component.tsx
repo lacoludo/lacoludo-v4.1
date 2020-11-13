@@ -2,6 +2,11 @@ import GoogleMaps from 'google-map-react'
 
 import Map from './map.style'
 
+type Props = {
+  lat: number
+  lng: number
+}
+
 const MapComponent = () => {
   const coordinates = {
     lat: 48.8566,
@@ -12,7 +17,7 @@ const MapComponent = () => {
     styles: Map
   })
 
-  const Marker = () => (
+  const Marker = ({ lat, lng }: Props) => (
     <>
       <img
         src='/cd-icon-location.svg'

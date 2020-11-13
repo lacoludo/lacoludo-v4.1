@@ -11,30 +11,33 @@ import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top.compon
 import Hero from '../projects/components/hero/hero.component'
 import Portfolio from '../projects/components/portfolio/portfolio.component'
 
-const Index = () => (
-  <>
-    <Head>
-      <title>Ludovic Lacouture | Projects</title>
-    </Head>
-    <MediaContextProvider>
-      <Media greaterThan='sm'>{FadeOnScroll()}</Media>
-      <Media lessThan='md'>
-        <Header />
-      </Media>
-      <Media greaterThan='sm'>
-        <MenuDesktop />
-        <Hero />
-      </Media>
-      <Portfolio />
-      <Media greaterThan='sm'>
-        <Footer />
-        <ScrollToTop />
-      </Media>
-      <Media lessThan='md'>
-        <MenuMobile />
-      </Media>
-    </MediaContextProvider>
-  </>
-)
+const Index = () => {
+  FadeOnScroll()
+
+  return (
+    <>
+      <Head>
+        <title>Ludovic Lacouture | Projects</title>
+      </Head>
+      <MediaContextProvider>
+        <Media lessThan='md'>
+          <Header />
+        </Media>
+        <Media greaterThan='sm'>
+          <MenuDesktop />
+          <Hero />
+        </Media>
+        <Portfolio />
+        <Media greaterThan='sm'>
+          <Footer />
+          <ScrollToTop />
+        </Media>
+        <Media lessThan='md'>
+          <MenuMobile />
+        </Media>
+      </MediaContextProvider>
+    </>
+  )
+}
 
 export default Index

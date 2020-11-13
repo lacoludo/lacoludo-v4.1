@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
 import { Tooltip } from 'react-tippy'
-import { kebabCase } from 'lodash'
+import kebabCase from 'lodash.kebabcase'
 
 import Filters from '../../states/filters.state'
 import Projects from '../../states/projects.state'
@@ -15,7 +16,7 @@ const PortfolioComponent = () => {
     setFilters(Filters)
     setProjects(Projects)
   }
-  const filterProjects = category => {
+  const filterProjects = (category: string) => {
     setFilters(
       Filters.map(filter => ({
         ...filter,
@@ -85,7 +86,7 @@ const PortfolioComponent = () => {
             >
               <a className='portfolio-box-1 half-width have-space'>
                 <Tooltip
-                  followCursor='true'
+                  followCursor={true}
                   position='bottom'
                   html={
                     <>
@@ -93,8 +94,8 @@ const PortfolioComponent = () => {
                       <div>{project.category}</div>
                     </>
                   }
-                  touchHold='true'
                 >
+                  {/* <Image src={project.image} alt={project.name} layout='fill' /> */}
                   <img src={project.image} alt={project.name} />
                 </Tooltip>
               </a>

@@ -26,17 +26,13 @@ const MenuDesktopComponent = () => {
 
     const scrollPage = () => {
       const sy = scrollY()
-      if (sy >= changeHeaderOn) {
-        header.classList.add('cbp-af-header-shrink')
-      } else {
-        header.classList.remove('cbp-af-header-shrink')
-      }
+      sy >= changeHeaderOn
+        ? header?.classList.add('cbp-af-header-shrink')
+        : header?.classList.remove('cbp-af-header-shrink')
       didScroll = false
     }
 
-    const scrollY = () => {
-      return window.pageYOffset || docElem.scrollTop
-    }
+    const scrollY = () => window.pageYOffset || docElem.scrollTop
 
     init()
   }, [])

@@ -1,5 +1,8 @@
+import { FC } from 'react'
 import styled from 'styled-components'
-import { color, typography } from 'styled-system'
+import { color, ColorProps, typography, TypographyProps } from 'styled-system'
+
+type Props = ColorProps & TypographyProps
 
 const ErrorWrapper = styled.div`
   height: 100vh;
@@ -8,7 +11,7 @@ const ErrorWrapper = styled.div`
   justify-content: center;
 `
 
-const ErrorCode = styled.h1`
+const ErrorCode: FC<Props> = styled.h1`
   ${color}
   ${typography}
   font-weight: 400;
@@ -17,7 +20,7 @@ const ErrorCode = styled.h1`
   border-right: 1px solid #fff;
 `
 
-const ErrorMessage = styled.div`
+const ErrorMessage: FC<Props> = styled.div`
   ${typography}
 `
 

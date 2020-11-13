@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
@@ -18,6 +19,7 @@ const Project = () => {
     fontSize: '15px',
     marginBottom: '-3px'
   }
+  FadeOnScroll()
 
   return (
     <>
@@ -25,7 +27,6 @@ const Project = () => {
         <title>Ludovic Lacouture | Project: Diviya Lacouture</title>
       </Head>
       <MediaContextProvider>
-        <Media greaterThan='sm'>{FadeOnScroll()}</Media>
         <Media lessThan='md'>
           <Header />
         </Media>
@@ -74,12 +75,12 @@ const Project = () => {
           <div className='container'>
             <div className='six columns'>
               <div className='img-wrap'>
-                <img src='/portfolio/project/1.gif' alt='' />
+                <Image src='/portfolio/project/1.gif' alt='' layout='fill' />
               </div>
             </div>
             <div className='six columns'>
               <div className='img-wrap'>
-                <img src='/portfolio/project/2.gif' alt='' />
+                <Image src='/portfolio/project/2.gif' alt='' layout='fill' />
               </div>
             </div>
           </div>
@@ -104,26 +105,26 @@ const Project = () => {
           <div className='container'>
             <div className='twelve columns'>
               <div className='img-wrap'>
-                <img src='/portfolio/project/1.jpg' alt='' />
+                <Image src='/portfolio/project/1.jpg' alt='' layout='fill' />
               </div>
             </div>
             <div className='clear'></div>
             <div className='six columns'>
               <div className='img-wrap'>
-                <img src='/portfolio/project/3.gif' alt='' />
+                <Image src='/portfolio/project/3.gif' alt='' layout='fill' />
               </div>
             </div>
             <div className='six columns'>
               <figure className='vimeo'>
                 <a href='http://player.vimeo.com/video/212869493'>
-                  <img src='/portfolio/project/3.jpg' alt='image' />
+                  <Image src='/portfolio/project/3.jpg' alt='' layout='fill' />
                 </a>
               </figure>
             </div>
             <div className='clear'></div>
             <div className='twelve columns'>
               <div className='img-wrap'>
-                <img src='/portfolio/project/2.jpg' alt='' />
+                <Image src='/portfolio/project/2.jpg' alt='' layout='fill' />
               </div>
             </div>
           </div>

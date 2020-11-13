@@ -1,4 +1,10 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {
+  DocumentContext,
+  Head,
+  Html,
+  Main,
+  NextScript
+} from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import * as snippet from '@segment/snippet'
 
@@ -7,7 +13,7 @@ import { mediaStyles } from '../shared/utils/media.util'
 const { NODE_ENV = 'development' } = process.env
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
     try {

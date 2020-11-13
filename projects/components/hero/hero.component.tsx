@@ -10,9 +10,9 @@ const HeroComponent = () => (
         <div className='twelve columns'>
           <div className='home-text-freelance'>
             <h1>
-              I miss U
+              I am a
               <br />
-              <span className='image2'>Diviya</span>
+              <span className='image2'>JavaScript developer</span>
             </h1>
           </div>
         </div>
