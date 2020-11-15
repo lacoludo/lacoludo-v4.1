@@ -11,11 +11,10 @@ import MenuDesktop from '../shared/components/menu-desktop/menu-desktop.componen
 import MenuMobile from '../shared/components/menu-mobile/menu-mobile.component'
 import Footer from '../shared/components/footer/footer.component'
 import ScrollToTop from '../shared/components/scroll-to-top/scroll-to-top.component'
-import { color } from '../shared/styles/color.style'
 
 const Project = () => {
   const style = {
-    color,
+    color: '#00d8ff',
     fontSize: '15px',
     marginBottom: '-3px'
   }

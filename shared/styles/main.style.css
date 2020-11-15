@@ -1,0 +1,9 @@
+@tailwind utilities;
+
+@import './fonts.style.css';
+@import './base.style.css';
+@import './skeleton.style.css';
+@import './layout.style.css';
+@import './color.style.css';
+@import './tippy.style.css';
+@import './menu.style.css';
