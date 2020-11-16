@@ -5,10 +5,10 @@ import Masonry from 'react-masonry-component'
 import { Tooltip } from 'react-tippy'
 import kebabCase from 'lodash.kebabcase'
 
-import Filters from '../../states/filters.state'
-import Projects from '../../states/projects.state'
+import Filters from '../states/filters.state'
+import Projects from '../states/projects.state'
 
-const PortfolioComponent = () => {
+const Portfolio = () => {
   const [filters, setFilters] = useState(Filters)
   const [projects, setProjects] = useState(Projects)
 
@@ -16,14 +16,20 @@ const PortfolioComponent = () => {
     setFilters(Filters)
     setProjects(Projects)
   }
-  const filterProjects = (category: string) => {
+  const filterProjects = (filterCategory: string) => {
     setFilters(
       Filters.map(filter => ({
         ...filter,
-        value: filter.category === category ? true : false
+        value: filter.label === filterCategory ? true : false
       }))
     )
-    setProjects(Projects.filter(project => project.category === category))
+    setProjects(
+      Projects.filter(project =>
+        project.categories.some(
+          projectCategory => projectCategory === filterCategory
+        )
+      )
+    )
   }
 
   return (
@@ -91,12 +97,14 @@ const PortfolioComponent = () => {
                   html={
                     <>
                       <div>{project.name}</div>
-                      <div>{project.category}</div>
+                      {project.categories.map(category => (
+                        <div>{category}</div>
+                      ))}
                     </>
                   }
                 >
-                  {/* <Image src={project.image} alt={project.name} layout='fill' /> */}
-                  <img src={project.image} alt={project.name} />
+                  {/* <Image src={project.picture} alt={project.name} layout='fill' /> */}
+                  <img src={project.picture} alt={project.name} />
                 </Tooltip>
               </a>
             </Link>
@@ -107,4 +115,4 @@ const PortfolioComponent = () => {
   )
 }
 
-export default PortfolioComponent
+export default Portfolio

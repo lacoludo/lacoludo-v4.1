@@ -1,6 +1,6 @@
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
-const FooterComponent = () => (
+const Footer = () => (
   <>
     <div className='section padding-top-bottom background-black'>
       <div className='container'>
@@ -47,4 +47,4 @@ const FooterComponent = () => (
   </>
 )
 
-export default FooterComponent
+export default Footer

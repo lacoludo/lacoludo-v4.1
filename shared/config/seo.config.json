@@ -1,0 +1,16 @@
+{
+  "title": "Ludovic Lacouture",
+  "titleTemplate": "Ludovic Lacouture",
+  "description": "Ludovic Lacouture -> https://lacoludo.com",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://lacoludo.com",
+    "site_name": "Ludovic Lacouture"
+  },
+  "twitter": {
+    "handle": "@lacoludo",
+    "site": "@lacoludo",
+    "cardType": "summary_large_image"
+  }
+}

@@ -8,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#00d8ff',
-        danger: '#ff2700'
+        primary: 'var(--primary)',
+        danger: 'var(--danger)'
+      },
+      textColor: {
+        primary: 'var(--primary)',
+        danger: 'var(--danger)'
       }
     }
   }

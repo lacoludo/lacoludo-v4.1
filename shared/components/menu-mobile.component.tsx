@@ -1,8 +1,8 @@
 import { FiAtSign, FiGrid, FiUser } from 'react-icons/fi'
 
-import ActiveLink from '../active-link/active-link.component'
+import ActiveLink from './active-link.component'
 
-const MenuMobileComponent = () => {
+const MenuMobile = () => {
   return (
     <>
       <style jsx>{`
@@ -57,4 +57,4 @@ const MenuMobileComponent = () => {
   )
 }
 
-export default MenuMobileComponent
+export default MenuMobile

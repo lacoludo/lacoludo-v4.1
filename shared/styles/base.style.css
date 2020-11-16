@@ -1,17 +1,9 @@
-/* // Table of Content
-  // ==================================================
-  // #Reset & Basics
-  // #Basic Styles
-  // #Site Styles
-  // #Typography
-  // #Links
-  // #Lists
-  // #Images
-  // #Buttons
-  // #Forms
-  // #Misc
+:root {
+  --primary: #00d8ff;
+  --danger: #ff2700;
+}
 
-  // #Reset & Basics (Inspired by E. Meyers)
+/* // #Reset & Basics
   // ================================================== */
 html,
 body,

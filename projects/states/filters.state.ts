@@ -1,24 +1,24 @@
-const FiltersState = [
+const Filters = [
   {
-    category: 'All',
+    label: 'All',
     value: true
   },
   {
-    category: 'Web Development',
+    label: 'Web Development',
     value: false
   },
   {
-    category: 'App Development',
+    label: 'App Development',
     value: false
   },
   {
-    category: 'Web Design',
+    label: 'Web Design',
     value: false
   },
   {
-    category: 'App Design',
+    label: 'App Design',
     value: false
   }
 ]
 
-export default FiltersState
+export default Filters

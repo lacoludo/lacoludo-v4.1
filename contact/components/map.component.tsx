@@ -1,20 +1,20 @@
 import GoogleMaps from 'google-map-react'
 
-import Map from './map.style'
+import MapStyle from './map.style'
 
 type Props = {
   lat: number
   lng: number
 }
 
-const MapComponent = () => {
+const Map = () => {
   const coordinates = {
     lat: 48.8566,
     lng: 2.3522
   }
 
   const createMapOptions = () => ({
-    styles: Map
+    styles: MapStyle
   })
 
   const Marker = ({ lat, lng }: Props) => (
@@ -46,4 +46,4 @@ const MapComponent = () => {
   )
 }
 
-export default MapComponent
+export default Map
