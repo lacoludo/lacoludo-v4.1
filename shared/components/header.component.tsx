@@ -1,4 +1,4 @@
-const HeaderComponent = () => (
+const Header = () => (
   <>
     <style jsx>{`
       .header-wrapper {
@@ -35,4 +35,4 @@ const HeaderComponent = () => (
   </>
 )
 
-export default HeaderComponent
+export default Header

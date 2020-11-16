@@ -1,7 +1,7 @@
 import ScrollUp from 'react-scroll-up'
 import { Tooltip } from 'react-tippy'
 
-const ScrollToTopComponent = () => (
+const ScrollToTop = () => (
   <>
     <ScrollUp
       showUnder={525}
@@ -14,4 +14,4 @@ const ScrollToTopComponent = () => (
   </>
 )
 
-export default ScrollToTopComponent
+export default ScrollToTop

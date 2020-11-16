@@ -1,9 +1,19 @@
-@tailwind utilities;
+@font-face {
+  font-family: 'Gotham-Rounded-Light';
+  src: url('/fonts/gotham-rounded/gotham-rounded-light.woff2') format('woff2'),
+    url('/fonts/gotham-rounded/gotham-rounded-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import './fonts.style.css';
+/* @tailwind base; */
 @import './base.style.css';
 @import './skeleton.style.css';
 @import './layout.style.css';
 @import './color.style.css';
-@import './tippy.style.css';
-@import './menu.style.css';
+
+/* @tailwind components; */
+@import './components.style.css';
+@import '~react-tippy/dist/tippy.css';
+
+@tailwind utilities;

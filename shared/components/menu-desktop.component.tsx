@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 
-import ActiveLink from '../active-link/active-link.component'
+import ActiveLink from './active-link.component'
 
-const MenuDesktopComponent = () => {
+const MenuDesktop = () => {
   useEffect(() => {
     const docElem = document.documentElement,
       header = document.querySelector('.cbp-af-header'),
@@ -55,11 +55,6 @@ const MenuDesktopComponent = () => {
                   </ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink activeClassName='active' href='/about'>
-                    <a>About</a>
-                  </ActiveLink>
-                </li>
-                <li>
                   <ActiveLink activeClassName='active' href='/contact'>
                     <a>Contact</a>
                   </ActiveLink>
@@ -73,4 +68,4 @@ const MenuDesktopComponent = () => {
   )
 }
 
-export default MenuDesktopComponent
+export default MenuDesktop

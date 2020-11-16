@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import Router from 'next/router'
 
 declare global {
@@ -7,8 +7,12 @@ declare global {
   }
 }
 
+type Props = {
+  children: ReactNode
+}
+
 Router.events.on('routeChangeComplete', url => window.analytics.page(url))
 
-const PageComponent: FC<ReactNode> = ({ children }) => <>{children}</>
+const Page = ({ children }: Props) => <>{children}</>
 
-export default PageComponent
+export default Page

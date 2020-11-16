@@ -1,4 +1,4 @@
-const HeroComponent = () => (
+const Hero = () => (
   <div className='section big-height background-black'>
     <div
       className='parallax fade-elements'
@@ -21,4 +21,4 @@ const HeroComponent = () => (
   </div>
 )
 
-export default HeroComponent
+export default Hero
