@@ -84,12 +84,8 @@ const Portfolio = () => {
       </div>
       <div className='in-container have-space' id='projects-grid'>
         <Masonry>
-          {projects.map(project => (
-            <Link
-              key={project.id}
-              href='/project'
-              as={`/projects/${kebabCase(project.name)}`}
-            >
+          {projects.map((project, index) => (
+            <Link key={index} href={`/projects/${kebabCase(project.name)}`}>
               <a className='portfolio-box-1 half-width have-space'>
                 <Tooltip
                   followCursor={true}
@@ -97,8 +93,8 @@ const Portfolio = () => {
                   html={
                     <>
                       <div>{project.name}</div>
-                      {project.categories.map(category => (
-                        <div>{category}</div>
+                      {project.categories.map((category, index) => (
+                        <div key={index}>{category}</div>
                       ))}
                     </>
                   }

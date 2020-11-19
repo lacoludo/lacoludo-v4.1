@@ -11,16 +11,14 @@ import {
   ECVDigital,
   wemblee
 } from './associated.constant'
-import { dateParse } from '../../shared/utils/date.util'
 
 const Data = [
   {
-    id: 1,
     name: 'Personal website: Ludovic Lacouture v1',
     working: false,
     date: {
-      start: dateParse('01/03/2009'),
-      end: dateParse('01/04/2009')
+      start: '01/03/2009',
+      end: '01/04/2009'
     },
     creators: [ludovicLacouture],
     associated: lyceeFrancaisPondichery,
@@ -32,12 +30,11 @@ const Data = [
     picture: '/portfolio/1.jpg'
   },
   {
-    id: 2,
     name: 'Savencia: Mon bon fromage',
     working: false,
     date: {
-      start: dateParse('01/01/2016'),
-      end: dateParse('01/02/2016')
+      start: '01/01/2016',
+      end: '01/02/2016'
     },
     creators: [ludovicLacouture, katleenTraversier, jeanneSibon, ophelieGigou],
     associated: ECVDigital,
@@ -47,15 +44,50 @@ const Data = [
         Mission :
         - develop a digital strategy for big retail outlets to create awareness of the brands of Savencia`,
     categories: ['App Design', 'App Development'],
-    picture: '/portfolio/2.jpg'
+    picture: '/portfolio/2.jpg',
+    technologies: [
+      {
+        name: 'HTML',
+        icon: 'html5-plain'
+      },
+      {
+        name: 'CSS',
+        icon: 'css3-plain',
+        frameworks: [
+          {
+            name: 'Bootstrap',
+            icon: 'bootstrap-plain'
+          }
+        ]
+      },
+      {
+        name: 'JavaScript',
+        icon: 'javascript-plain',
+        frameworks: [
+          {
+            name: 'Angular',
+            icon: 'angularjs-plain'
+          }
+        ],
+        libraries: [
+          {
+            name: 'jQuery',
+            icon: 'jquery-plain'
+          },
+          {
+            name: 'React',
+            icon: 'react-original'
+          }
+        ]
+      }
+    ]
   },
   {
-    id: 3,
     name: 'Personal website: Ludovic Lacouture v2',
     working: false,
     date: {
-      start: dateParse('01/01/2016'),
-      end: dateParse('01/02/2016')
+      start: '01/01/2016',
+      end: '01/02/2016'
     },
     creators: [ludovicLacouture],
     associated: {},
@@ -66,59 +98,25 @@ const Data = [
     picture: '/portfolio/3.jpg'
   },
   {
-    id: 4,
     name: 'Wemblee: Notaprom v1',
     working: false,
     date: {
-      start: dateParse('01/03/2016'),
-      end: dateParse('01/08/2016')
+      start: '01/03/2016',
+      end: '01/08/2016'
     },
     creators: [ludovicLacouture, sebastienCoudoin, abdoulayeMaiga],
     associated: wemblee,
     url: '',
     description: '',
     categories: ['Web Design', 'Web Development'],
-    technologies: {
-      clients: [
-        {
-          type: 'web',
-          languages: [
-            {
-              name: 'HTML'
-            },
-            {
-              name: 'CSS'
-            }
-          ]
-        }
-      ],
-      server: {
-        languages: [
-          {
-            name: 'Java'
-          },
-          {
-            name: 'Scala'
-          }
-        ]
-      },
-      database: {
-        languages: [
-          {
-            name: 'MySQL'
-          }
-        ]
-      }
-    },
     picture: '/portfolio/4.jpg'
   },
   {
-    id: 5,
     name: 'Personal website: Ludovic Lacouture v3',
     working: false,
     date: {
-      start: dateParse('01/07/2016'),
-      end: dateParse('01/08/2016')
+      start: '01/07/2016',
+      end: '01/08/2016'
     },
     creators: [ludovicLacouture],
     associated: {},
@@ -129,7 +127,5 @@ const Data = [
     picture: '/portfolio/5.jpg'
   }
 ]
-
-console.log(Data)
 
 export default Data
