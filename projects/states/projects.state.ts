@@ -1,8 +1,7 @@
 import Data from '../constants/data.constant'
 
 const Projects = [
-  ...Data.map(({ id, name, categories, picture }) => ({
-    id,
+  ...Data.map(({ name, categories, picture }) => ({
     name,
     categories,
     picture
