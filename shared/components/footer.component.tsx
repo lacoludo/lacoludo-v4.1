@@ -8,7 +8,7 @@ const Footer = () => (
           <p>
             Call me at <a href='#'>+33 7 81 81 49 79</a>
             <br />
-            or say hello at <a href='#'>lacoludo@outlook.com</a>
+            or say hello at <a href='#'>email@lacoludo.com</a>
           </p>
         </div>
         <div className='six columns'>
