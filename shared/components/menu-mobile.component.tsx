@@ -33,7 +33,7 @@ const MenuMobile = () => {
           transition: background-color 0.1s ease-in-out;
         }
       `}</style>
-      <nav className="menu-mobile">
+      <nav className='menu-mobile'>
         <ActiveLink activeClassName='active' href='/'>
           <a className='nav-link'>
             <FiGrid />
