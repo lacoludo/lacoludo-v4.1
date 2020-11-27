@@ -99,8 +99,12 @@ const Portfolio = () => {
                     </>
                   }
                 >
-                  {/* <Image src={project.picture} alt={project.name} layout='fill' /> */}
-                  <img src={project.picture} alt={project.name} />
+                  <Image
+                    src={project.picture}
+                    alt={project.name}
+                    width={800}
+                    height={project.height}
+                  />
                 </Tooltip>
               </a>
             </Link>

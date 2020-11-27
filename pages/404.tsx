@@ -21,13 +21,11 @@ const Custom404 = () => (
         font-size: 20px;
       }
     `}</style>
-    <div className="error-wrapper">
-      <h1 className="error-code" color='danger'>
+    <div className='error-wrapper'>
+      <h1 className='error-code' color='danger'>
         404
       </h1>
-      <div className="error-message">
-        This page could not be found.
-      </div>
+      <div className='error-message'>This page could not be found.</div>
     </div>
   </>
 )

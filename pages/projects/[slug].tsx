@@ -85,12 +85,26 @@ const Project = ({ project }: any) => {
         <div className='container'>
           <div className='six columns'>
             <div className='img-wrap'>
-              <Image src='/portfolio/project/1.gif' alt='' layout='fill' />
+              <Image src='/projects/1.gif' alt='' width={1440} height={810} />
             </div>
           </div>
           <div className='six columns'>
             <div className='img-wrap'>
-              <Image src='/portfolio/project/2.gif' alt='' layout='fill' />
+              <Image src='/projects/2.gif' alt='' width={1440} height={810} />
+            </div>
+          </div>
+        </div>
+        <div className='container'>
+          <div className='twelve columns'>
+            <div className='video-wrapper'>
+              <figure className='vimeo'>
+                <iframe
+                  src='https://player.vimeo.com/video/484266803?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;color=00d8ff'
+                  width='500'
+                  height='281'
+                  frameBorder='0'
+                ></iframe>
+              </figure>
             </div>
           </div>
         </div>
@@ -107,34 +121,6 @@ const Project = ({ project }: any) => {
               amet ligula venenatis euismod. Praesent bibendum pharetra tortor,
               pretium interdum augue vehicula in. Quisque sit amet commodo
               sapien. Aliquam cursus urna eu urna pretium posuere.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='section padding-bottom background-black'>
-        <div className='container'>
-          <div className='twelve columns'>
-            <div className='img-wrap'>
-              <Image src='/portfolio/project/1.jpg' alt='' layout='fill' />
-            </div>
-          </div>
-          <div className='clear'></div>
-          <div className='six columns'>
-            <div className='img-wrap'>
-              <Image src='/portfolio/project/3.gif' alt='' layout='fill' />
-            </div>
-          </div>
-          <div className='six columns'>
-            <figure className='vimeo'>
-              <a href='http://player.vimeo.com/video/212869493'>
-                <Image src='/portfolio/project/3.jpg' alt='' layout='fill' />
-              </a>
-            </figure>
-          </div>
-          <div className='clear'></div>
-          <div className='twelve columns'>
-            <div className='img-wrap'>
-              <Image src='/portfolio/project/2.jpg' alt='' layout='fill' />
             </div>
           </div>
         </div>

@@ -27,7 +27,8 @@ const Data = [
     
         (Thanks to my teacher Mr Bruno Onesta)`,
     categories: ['Web Design', 'Web Development'],
-    picture: '/portfolio/1.jpg'
+    picture: '/portfolio/1.jpg',
+    height: 450
   },
   {
     name: 'Savencia: Mon bon fromage',
@@ -80,7 +81,8 @@ const Data = [
           }
         ]
       }
-    ]
+    ],
+    height: 913
   },
   {
     name: 'Personal website: Ludovic Lacouture v2',
@@ -95,7 +97,8 @@ const Data = [
     description:
       '7 years later after the 1st version, I worked on my personal website with the famous front-end framework Bootstrap and with some animations in JavaScript and SVG.',
     categories: ['Web Design', 'Web Development'],
-    picture: '/portfolio/3.jpg'
+    picture: '/portfolio/3.jpg',
+    height: 533
   },
   {
     name: 'Wemblee: Notaprom v1',
@@ -109,7 +112,8 @@ const Data = [
     url: '',
     description: '',
     categories: ['Web Design', 'Web Development'],
-    picture: '/portfolio/4.jpg'
+    picture: '/portfolio/4.jpg',
+    height: 600
   },
   {
     name: 'Personal website: Ludovic Lacouture v3',
@@ -124,7 +128,8 @@ const Data = [
     description:
       'A few months later, I finally put all my projects on my portfolio and I detailed a lot about my skills and my background.',
     categories: ['Web Design', 'Web Development'],
-    picture: '/portfolio/5.jpg'
+    picture: '/portfolio/5.jpg',
+    height: 687
   }
 ]
 
